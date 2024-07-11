@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Nav Bar*/
+.gradient-button {
+    font-size: 0.95rem;
+    font-weight: 500;
+    background: linear-gradient(to bottom, #84CC8F, #426648);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.gradient-button:hover {
+    background:  #426648 ;
+    transition: all 0.3s ease;
+}
+
+.nav-bar-glass {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.gradient-green {
+    background: linear-gradient(to bottom, #84CC8F, #426648);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.green-1{
+    color: #426648;
+}
+.green-2{
+    color: #84CC8F;
+}
+
+.green-3{
+    color: #224432;
+}
+.green-4{
+    color: #64A168;
+}
+
+.grey-1{
+    color: #B7B7C0;
+    opacity: 0.9;
+}
+.grey-2{
+    color: #D0DAD1;
+}
+.grey-3{
+    color: #9BA39C;
+    opacity: 0.9;
+}
+
+
+
+.card {
+    border: 6px solid rgba(61, 119, 88, 0.66);
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: rgba(61, 119, 88, 0.16);
+}
+
+.card.selected {
+    background-color: rgba(61, 119, 88, 0.16);
+}
+
+
+
+
+
+.carousel {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-item div {
+    width: 100%;
+
+
+
+    border-radius: 32px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0%;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
