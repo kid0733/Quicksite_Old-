@@ -134,3 +134,63 @@
 .carousel-control:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+#hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    #logo{
+        height: 2.5vh;
+    }
+    .button{
+        margin-right: none;
+    }
+    #hero{
+        flex-direction: column;
+        padding-top: 1vh;
+    }
+    #text_center{
+        text-align: center;
+    }
+    #hero_paragraph{
+        max-width: 90vw;
+        text-align: center;
+    }
+    #hero_button{
+        margin-right: none;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        display: flex;
+        align-items: center;
+    }
+    #hero_contianer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3vh;
+        text-align: center;
+    }
+    #hero_image{
+        width: 90vw;
+        height: 40vh;
+        padding-top: 3vh;
+        margin-left: 0%;
+    }
+
+    #mid_text_B{
+        font-size: 5vh;
+        margin-top: 2vh;
+    }
+
+}

@@ -23,52 +23,52 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="nav-bar-glass fixed top-0 left-0 w-[100vw] flex items-center justify-between px-8 py-4">
+    <nav class="nav-bar-glass fixed top-0 left-0 w-[100vw] flex items-center justify-between px-8 py-4" id="navbar-mobile">
         <div class="logo text-2xl font-bold">
-            <img src="./Assets/Pictures/Logo.webp" alt="Logo" class="h-10">
+            <img src="./Assets/Pictures/Logo.webp" alt="Logo" class="h-10" id="logo">
         </div>
-        <div class="button">
-            <button class="gradient-button px-4 py-2  mr-14 rounded-lg">Start For Free</button>
+        <div class="button sm: mr-0">
+            <button class="gradient-button px-4 py-2   rounded-lg">Start For Free</button>
         </div>
     </nav>
-    <main class="pt-20">
+    <main class="pt-20 max-w-[90vw] ml-auto mr-auto flex-col items-center justify-center">
         <!-- HERO SECTION -->
-        <div class="flex items-center justify-center h-screen ">
-            <div class="text-left flex items-start justify-center flex-col gap-9">
+        <div class="flex items-center justify-center h-screen " id="hero">
+            <div class="text-left flex items-start justify-center flex-col gap-9 sm: items-center" id="hero_container" >
                 <div>
                     <!-- HeroText -->
-                    <h1 class="text-7xl font-bold green-1 mt-10">
+                    <h1 class="text-7xl font-bold green-1 mt-10 sm: text-center">
                         BUILD AND HOST
                     </h1>
-                    <h1 class="text-7xl font-bold green-2">
+                    <h1 class="text-7xl font-bold green-2 sm: text-center">
                         FOR FREE
                     </h1>
                 </div>
                 <!-- HeroParagraph -->
-                <p class="text-2xl max-w-[30vw] green-3">QuickSite is a free web development platform that lets you
-                    build and host your websites for free.</p>
+                <p class="text-2xl max-w-[35vw] green-3 text-center" id="hero_paragraph">QuickSite is a free web development platform <br>that lets you
+                    build and host your websites <br>for free.</p>
                 <!-- HeroButton -->
                 <div class="button">
-                    <button class="gradient-button px-8 py-6 text-2xl  mr-14 rounded-lg">Start For Free</button>
+                    <button class="gradient-button px-8 py-6 text-2xl rounded-lg" id="hero_button">Start For Free</button>
                 </div>
             </div>
             <div>
-                <img src="./Assets/Pictures/HeroBG.png" alt="" class="w-[60vw] ml-10">
+                <img src="./Assets/Pictures/HeroBG.png" alt="" class="w-[60vw] ml-10" id="hero_image">
             </div>
         </div>
 
         <!-- MID-TEXT-1-A -->
         <div class="flex items-center justify-center flex-col mt-[10vh]">
-            <h1 class="text-7xl font-bold grey-1 text-center">Launch Your First Website</h1>
+            <h1 class="text-3xl font-bold grey-1 text-center " >Launch Your First Website</h1>
 
-            <h1 class="text-7xl font-bold grey-1 text-center">In Minutes</h1>
+            <h1 class="text-7xl font-bold grey-1 text-center ">In Minutes</h1>
         </div>
 
         <!-- MID-TEXT-1-B -->
         <div class="flex items-center justify-center flex-col mt-[10vh]">
-            <h1 class="text-7xl font-bold green-2 mt-[10vh] text-center">Craft Your Vision</h1>
+            <h1 class="text-3xl font-bold green-2 mt-[10vh] text-center">Craft Your Vision</h1>
 
-            <h1 class="text-7xl font-bold green-1 mt-[5vh] text-center">AI simplicity + Customization Power</h1>
+            <h1 class="text-7xl font-bold green-1 mt-[5vh] text-center" id="mid_text_B">AI simplicity + Customization Power</h1>
 
             <p class="text-4xl mt-[5vh] max-w-[60vw] text-center">Easily create stunning websites, integrate data, and
                 implement advanced features.</p>
