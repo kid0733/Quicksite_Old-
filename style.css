@@ -172,6 +172,10 @@ img{
 #carousel-container{
     max-width: 60vw;
   }
+
+.image-container-cards{
+    margin-left: 10;
+}
 /* Mobile View */
 @media (max-width: 768px) {
   main {
