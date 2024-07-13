@@ -5,15 +5,13 @@
   font-family: "Poppins", sans-serif;
 }
 
-
-
-img{
-    z-index: -1;
+img {
+  z-index: -1;
 }
 /* Nav Bar */
-#navbar{
-    z-index: 10;
-    position: fixed;
+#navbar {
+  z-index: 10;
+  position: fixed;
 }
 .gradient-button {
   font-size: 0.95rem;
@@ -145,13 +143,13 @@ img{
 #cards_mobile {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: center;
 }
 #cards_mobile_2 {
   display: flex;
   flex-direction: column;
-  align-items:flex-end;
+  align-items: flex-end;
   justify-content: center;
 }
 
@@ -162,7 +160,6 @@ img{
   transition: all 5s ease;
 }
 
-
 .show {
   opacity: 1;
   visibility: visible;
@@ -171,24 +168,23 @@ img{
 }
 
 #mid_text_B {
-    
-    margin-top: 20vh;
-  }
+  margin-top: 20vh;
+}
 
-
-
-
+.minutes-text {
+  font-size: 4.5rem;
+}
 
 #display-image {
   width: 100%;
   margin-left: 1rem;
 }
-#carousel-container{
-    max-width: 60vw;
-  }
+#carousel-container {
+  max-width: 60vw;
+}
 
-.image-container-cards{
-    margin-left: 10;
+.image-container-cards {
+  margin-left: 10;
 }
 /* Mobile View */
 @media (max-width: 768px) {
@@ -275,53 +271,55 @@ img{
     max-width: fit-content;
   }
 
-  #mid_text_container{
+  #mid_text_container {
     margin-top: 0;
   }
-  
-  #mid_text_1{
+
+  #mid_text_1 {
     font-size: 3vh;
     max-width: 90vw;
     margin-top: 10vh;
   }
-  #mid_text_2{
+  #mid_text_2 {
     font-size: 5vh;
   }
-  #mid_text_3{
-
+  #mid_text_3 {
     line-height: 2rem;
     margin-bottom: 10vh;
   }
-  #our_team_title{
+  #our_team_title {
     font-size: 5vh;
   }
-  #our_team_text{
+  #our_team_text {
     font-size: 2vh;
     max-width: 80vw;
   }
-  #carousel-text{
+  #carousel-text {
     font-size: 2vh;
   }
-  #carousel-title{
+  #carousel-title {
     font-size: 5vh;
   }
-  .carousel-item{
+  .carousel-item {
     flex-direction: column;
     justify-items: center;
   }
-  #carousel-container{
+  #carousel-container {
     max-width: 90vw;
     margin-bottom: -15vh;
   }
-  #team_text_container{
+  #team_text_container {
     margin-left: 0%;
     margin-top: 1vh;
   }
-  #footer{
+  #footer {
     font-size: 1rem;
   }
   #display-image {
     width: 100%;
     margin-left: 0rem;
+  }
+  .minutes-text {
+    font-size: 3rem;
   }
 }
