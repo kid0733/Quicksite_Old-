@@ -5,6 +5,8 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+
 img{
     z-index: -1;
 }
@@ -160,14 +162,26 @@ img{
   transition: all 5s ease;
 }
 
+
 .show {
   opacity: 1;
   visibility: visible;
   transition: all 5s ease;
   max-width: 30vw;
 }
+
+#mid_text_B {
+    
+    margin-top: 20vh;
+  }
+
+
+
+
+
 #display-image {
   width: 100%;
+  margin-left: 1rem;
 }
 #carousel-container{
     max-width: 60vw;
@@ -239,7 +253,7 @@ img{
 
   #mid_text_B {
     font-size: 5vh;
-    margin-top: 2vh;
+    margin-top: 20vh;
   }
 
   #cards_container_mobile {
@@ -274,8 +288,8 @@ img{
     font-size: 5vh;
   }
   #mid_text_3{
-    font-size: 2vh;
-    line-height: 1rem;
+
+    line-height: 2rem;
     margin-bottom: 10vh;
   }
   #our_team_title{
@@ -293,6 +307,7 @@ img{
   }
   .carousel-item{
     flex-direction: column;
+    justify-items: center;
   }
   #carousel-container{
     max-width: 90vw;
@@ -304,5 +319,9 @@ img{
   }
   #footer{
     font-size: 1rem;
+  }
+  #display-image {
+    width: 100%;
+    margin-left: 0rem;
   }
 }
