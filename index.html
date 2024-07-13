@@ -1,231 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>QuickSite Guru</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="QuickSite - Do Web Better">
-    <meta name="keywords" content="example, awesome, web page">
-    <meta property="og:title" content="QuickSite Guru">
-    <meta property="og:description" content="QuickSite - Do Web Better">
-    <meta property="og:image"
-        content="https://anai-qkkmajrefx5hn8hsgjn4-assets.s3.ap-southeast-2.amazonaws.com/R4WD5hMCiU8RzIehMKc0.png">
-    <link rel="icon"
-        href="https://anai-qkkmajrefx5hn8hsgjn4-assets.s3.ap-southeast-2.amazonaws.com/R4WD5hMCiU8RzIehMKc0.png"
-        type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="QuickSite - Do Web Better" />
+    <meta name="keywords" content="example, awesome, web page" />
+    <meta property="og:title" content="QuickSite Guru" />
+    <meta property="og:description" content="QuickSite - Do Web Better" />
+    <meta
+      property="og:image"
+      content="https://anai-qkkmajrefx5hn8hsgjn4-assets.s3.ap-southeast-2.amazonaws.com/R4WD5hMCiU8RzIehMKc0.png"
+    />
+    <link
+      rel="icon"
+      href="https://anai-qkkmajrefx5hn8hsgjn4-assets.s3.ap-southeast-2.amazonaws.com/R4WD5hMCiU8RzIehMKc0.png"
+      type="image/x-icon"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAVBAR -->
-    <nav class="nav-bar-glass fixed top-0 left-0 w-[100vw] flex items-center justify-between px-8 py-4" id="navbar-mobile">
-        <div class="logo text-2xl font-bold">
-            <img src="./Assets/Pictures/Logo.webp" alt="Logo" class="h-10" id="logo">
-        </div>
-        <div class="button sm: mr-0">
-            <button class="gradient-button px-4 py-2   rounded-lg">Start For Free</button>
-        </div>
+    <nav
+      class="nav-bar-glass  top-0 left-0 w-[100vw] flex items-center justify-between px-8 py-4"
+      id="navbar-mobile navbar"
+    >
+      <div class="logo text-2xl font-bold">
+        <img
+          src="./Assets/Pictures/Logo.webp"
+          alt="Logo"
+          class="h-10"
+          id="logo"
+        />
+      </div>
+      <div class="button sm: mr-0">
+        <button class="gradient-button px-4 py-2 rounded-lg">
+          Start For Free
+        </button>
+      </div>
     </nav>
-    <main class="pt-20 max-w-[90vw] ml-auto mr-auto flex-col items-center justify-center">
-        <!-- HERO SECTION -->
-        <div class="flex items-center justify-center h-screen " id="hero">
-            <div class="text-left flex items-start justify-center flex-col gap-9 sm: items-center" id="hero_container" >
-                <div>
-                    <!-- HeroText -->
-                    <h1 class="text-7xl font-bold green-1 mt-10 sm: text-center">
-                        BUILD AND HOST
-                    </h1>
-                    <h1 class="text-7xl font-bold green-2 sm: text-center">
-                        FOR FREE
-                    </h1>
-                </div>
-                <!-- HeroParagraph -->
-                <p class="text-2xl max-w-[35vw] green-3 text-center" id="hero_paragraph">QuickSite is a free web development platform <br>that lets you
-                    build and host your websites <br>for free.</p>
-                <!-- HeroButton -->
-                <div class="button">
-                    <button class="gradient-button px-8 py-6 text-2xl rounded-lg" id="hero_button">Start For Free</button>
-                </div>
+    <main
+      class="pt-5 max-w-[90vw] ml-auto mr-auto flex-col items-center justify-center"
+    >
+      <!-- HERO SECTION -->
+      <div class="flex items-center justify-center h-screen" id="hero">
+        <div
+          class="text-left flex items-start justify-center flex-col gap-9 sm: items-center"
+          id="hero_container"
+        >
+          <div>
+            <!-- HeroText -->
+            <h1
+              class="text-7xl font-bold green-1 mt-10 sm: text-center text-[5vh]"
+            >
+              BUILD AND HOST
+            </h1>
+            <h1 class="text-7xl font-bold green-2 sm: text-center text-[8vh]">
+              FOR FREE
+            </h1>
+          </div>
+          <!-- HeroParagraph -->
+          <p
+            class="text-2xl max-w-[35vw] green-3 text-center"
+            id="hero_paragraph"
+          >
+            QuickSite is a free web development platform that lets you build and
+            host your websites for free.
+          </p>
+          <!-- HeroButton -->
+          <div class="button">
+            <button
+              class="gradient-button px-8 py-6 text-2xl rounded-lg"
+              id="hero_button"
+            >
+              Start For Free
+            </button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./Assets/Pictures/HeroBG.png"
+            alt=""
+            class="w-[60vw] ml-10"
+            id="hero_image"
+          />
+        </div>
+      </div>
+
+      <!-- MID-TEXT-1-A -->
+      <div class="flex items-center justify-center flex-col mt-[10vh]">
+        <h1 class="text-3xl font-bold grey-1 text-center">
+          Launch Your First Website
+        </h1>
+
+        <h1 class="text-7xl font-bold grey-1 text-center">In Minutes</h1>
+      </div>
+
+      <!-- MID-TEXT-1-B -->
+      <div class="flex items-center justify-center flex-col mt-[10vh]">
+        <h1 class="text-3xl font-bold green-2  text-center">
+          Craft Your Vision
+        </h1>
+
+        <h1
+          class="text-7xl font-bold green-1 mt-[5vh] text-center"
+          id="mid_text_B"
+        >
+          AI simplicity + Customization Power
+        </h1>
+
+        <p class="text-4xl mt-[5vh] mb-[5vh] max-w-[60vw] text-center sm: text-[2vh] text-justify max-w-[80vw]">
+          Easily create stunning websites, integrate data, and implement
+          advanced features.
+        </p>
+      </div>
+
+      <!-- Details Card 1 -->
+      <div class="flex items-center justify-center h-screen">
+        <div class="flex flex-row sm: items-center justify-center" id="cards_container_mobile">
+          <!-- Cards Section -->
+          <div class="flex flex-col space-y-4 overflow-x-scroll" id="cards_mobile">
+            <div class="card" data-img="./Assets/Pictures/InfoCardImg1.png">
+              <h2 class="text-5xl font-regular green-3 sm: text-[2vh]">
+                Streamlined Meta Content
+              </h2>
+              <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh] sm: text-[2vh]">
+                Quick and Simple Access
+              </h3>
+              <p class="text-base sm: text-[2vh] show">
+                Effortlessly customize your personal website with our intuitive
+                HTML head section/tag, designed for simple editing and ensuring
+                your site reflects your unique style and needs.
+              </p>
             </div>
-            <div>
-                <img src="./Assets/Pictures/HeroBG.png" alt="" class="w-[60vw] ml-10" id="hero_image">
+            <div class="card" data-img="./Assets/Pictures/InfoCardImg2.png">
+              <h2 class="text-3xl font-regular green-3 sm: text-[2vh]">
+                Streamlined Meta Content
+              </h2>
+              <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh] sm: text-[2vh]">
+                Quick and Simple Access
+              </h3>
+              <p class="text-base sm: text-[2vh] hide">
+                Effortlessly customize your personal website with our intuitive
+                HTML head section/tag, designed for simple editing and ensuring
+                your site reflects your unique style and needs.
+              </p>
             </div>
-        </div>
-
-        <!-- MID-TEXT-1-A -->
-        <div class="flex items-center justify-center flex-col mt-[10vh]">
-            <h1 class="text-3xl font-bold grey-1 text-center " >Launch Your First Website</h1>
-
-            <h1 class="text-7xl font-bold grey-1 text-center ">In Minutes</h1>
-        </div>
-
-        <!-- MID-TEXT-1-B -->
-        <div class="flex items-center justify-center flex-col mt-[10vh]">
-            <h1 class="text-3xl font-bold green-2 mt-[10vh] text-center">Craft Your Vision</h1>
-
-            <h1 class="text-7xl font-bold green-1 mt-[5vh] text-center" id="mid_text_B">AI simplicity + Customization Power</h1>
-
-            <p class="text-4xl mt-[5vh] max-w-[60vw] text-center">Easily create stunning websites, integrate data, and
-                implement advanced features.</p>
-        </div>
-
-        <!-- Details Card 1 -->
-        <div class="flex items-center justify-center h-screen">
-            <div class="flex">
-                <!-- Cards Section -->
-                <div class="flex flex-col space-y-4">
-                    <div class="card" data-img="./Assets/Pictures/InfoCardImg1.png">
-                        <h2 class="text-3xl font-regular green-3">Streamlined Meta Content</h2>
-                        <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh]">Quick and Simple Access</h3>
-                        <p class="text-base max-w-[30vw]">Effortlessly customize your personal website with our
-                            intuitive HTML head section/tag, designed for simple editing and ensuring your site reflects
-                            your unique style and needs.</p>
-                    </div>
-                    <div class="card" data-img="./Assets/Pictures/InfoCardImg2.png">
-                        <h2 class="text-3xl font-regular green-3">Streamlined Meta Content</h2>
-                        <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh]">Quick and Simple Access</h3>
-                        <p class="text-base max-w-[30vw]">Effortlessly customize your personal website with our
-                            intuitive HTML head section/tag, designed for simple editing and ensuring your site reflects
-                            your unique style and needs.</p>
-                    </div>
-                    <div class="card" data-img="./Assets/Pictures/InfoCardImg3.png">
-                        <h2 class="text-3xl font-regular green-3">Streamlined Meta Content</h2>
-                        <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh]">Quick and Simple Access</h3>
-                        <p class="text-base max-w-[30vw]">Effortlessly customize your personal website with our
-                            intuitive HTML head section/tag, designed for simple editing and ensuring your site reflects
-                            your unique style and needs.</p>
-                    </div>
-                </div>
-                <!-- Image Section -->
-                <div class="ml-10">
-                    <img id="display-image" src="./Assets/Pictures/InfoCardImg1.png" alt="Selected Image"
-                        class="w-[50vw] h-auto rounded-2xl">
-                </div>
+            <div class="card" data-img="./Assets/Pictures/InfoCardImg3.png">
+              <h2 class="text-3xl font-regular green-3 sm: text-[2vh]" >
+                Streamlined Meta Content
+              </h2>
+              <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh] sm: text-[2vh]">
+                Quick and Simple Access
+              </h3>
+              <p class="text-base sm: text-[2vh] hide">
+                Effortlessly customize your personal website with our intuitive
+                HTML head section/tag, designed for simple editing and ensuring
+                your site reflects your unique style and needs.
+              </p>
             </div>
+          </div>
+          <!-- Image Section -->
+          <div class="ml-10 sm: ml-0 image-container-cards">
+            <img
+            
+              id="display-image"
+              src="./Assets/Pictures/InfoCardImg1.png"
+              alt="Selected Image"
+              class="w-[50vw] h-auto rounded-2xl sm: w-100%"
+            />
+          </div>
         </div>
+      </div>
 
-        <!-- MID-TEXT-2-A -->
-        <div class="flex items-center justify-center flex-col mt-[10vh]">
-            <h1 class="text-7xl font-bold green-2 mt-[10vh] text-center max-w-[60vw]">Build Production-Ready Websites
-                Effortlessly</h1>
+      <!-- MID-TEXT-2-A -->
+      <div class="flex items-center justify-center flex-col  " id="mid_text_container">
+        <h1
+          class="text-7xl font-bold green-2 text-center max-w-[60vw] "
+          id="mid_text_1"
+        >
+          Build Production-Ready Websites Effortlessly
+        </h1>
 
-            <h1 class="text-7xl font-bold green-1 mt-[5vh] text-center">Customize Everything</h1>
+        <h1 class="text-7xl font-bold green-1 mt-[5vh] text-center" id="mid_text_2">
+          Customize Everything
+        </h1>
 
-            <p class="text-4xl mt-[5vh] max-w-[60vw] text-center">There is no limit to what you can build with
-                QuicksiteGuru.</p>
-        </div>
+        <p class="text-4xl mt-[5vh] max-w-[60vw] text-center" id="mid_text_3">
+          There is no limit to what you can build with QuicksiteGuru.
+        </p>
+      </div>
 
-
-        <!-- Details Card 2 -->
-        <div class="flex items-center justify-center h-screen">
-            <div class="flex gap-10">
-
-                <!-- Image Section -->
-                <div class="ml-10">
-                    <img id="display-image2" src="./Assets/Pictures/InfoCardImg4.png" alt="Selected Image"
-                        class="w-[50vw] h-auto rounded-2xl">
-                </div>
-                <!-- Cards Section -->
-                <div class="flex flex-col space-y-4">
-                    <div class="card" data-img="./Assets/Pictures/InfoCardImg4.png">
-                        <!-- Unique data-img for each card -->
-                        <h2 class="text-3xl font-regular green-3">Streamlined Meta Content</h2>
-                        <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh]">Quick and Simple Access</h3>
-                        <p class="text-base max-w-[30vw]">Effortlessly customize your personal website with our
-                            intuitive HTML head section/tag, designed for simple editing and ensuring your site reflects
-                            your unique style and needs.</p>
-                    </div>
-                    <div class="card" data-img="./Assets/Pictures/InfoCardImg5.png">
-                        <!-- Unique data-img for each card -->
-                        <h2 class="text-3xl font-regular green-3">Streamlined Meta Content</h2>
-                        <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh]">Quick and Simple Access</h3>
-                        <p class="text-base max-w-[30vw]">Effortlessly customize your personal website with our
-                            intuitive HTML head section/tag, designed for simple editing and ensuring your site reflects
-                            your unique style and needs.</p>
-                    </div>
-                    <div class="card" data-img="./Assets/Pictures/InfoCardImg6.png">
-                        <!-- Unique data-img for each card -->
-                        <h2 class="text-3xl font-regular green-3">Streamlined Meta Content</h2>
-                        <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh]">Quick and Simple Access</h3>
-                        <p class="text-base max-w-[30vw]">Effortlessly customize your personal website with our
-                            intuitive HTML head section/tag, designed for simple editing and ensuring your site reflects
-                            your unique style and needs.</p>
-                    </div>
-                </div>
-
-
+      <!-- Details Card 2 -->
+      <div class="flex items-center justify-center h-screen">
+        <div class="flex flex-row sm: items-center justify-center" id="cards_container_mobile">
+          <!-- Cards Section -->
+          <div class="flex flex-col space-y-4 overflow-x-scroll" id="cards_mobile">
+            <div class="card" data-img="./Assets/Pictures/InfoCardImg1.png">
+              <h2 class="text-5xl font-regular green-3 sm: text-[2vh]">
+                Streamlined Meta Content
+              </h2>
+              <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh] sm: text-[2vh]">
+                Quick and Simple Access
+              </h3>
+              <p class="text-base  sm: text-[2vh] show">
+                Effortlessly customize your personal website with our intuitive
+                HTML head section/tag, designed for simple editing and ensuring
+                your site reflects your unique style and needs.
+              </p>
             </div>
-        </div>
-
-        <!-- OUR TEAM -->
-        <div class="flex items-center justify-center h-[10vh] bg-black"></div>
-        <div class="flex  items-center  h-screen bg-black flex-col ">
-            <h1 class="grey-2 font-light text-8xl   text-center max-w-[60vw]">Our Team</h1>
-            <p class="grey-2 font-extralight text-3xl max-w-[40vw] mt-[5vh] text-center ">Passionate, skilled and
-                dedicated to delivering exceptional solutions.</p>
-
-            <!-- CAROUSEL -->
-            <div class="carousel pb-[20vh] max-w-[60vw] max-h-fit">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <div>
-                            <img src="./Assets/Pictures/Serge-1.png" alt="">
-                        </div>
-                        <div class="bg-neutral-900 rounded-9xl ml-[2vw] p-[2rem]">
-                            <h2 class="text-6xl font-light grey-3">Serge</h2>
-                            <h2 class="text-2xl mt-[2vh] italic font-regular green-4">Founder</h2>
-                            <div>
-                                <p class="text-xl w-100% italic mt-[2vh] grey-2 font-light">"We’ve gone from feeling
-                                    helpless about our platform to feeling hopeful about our future in a manner of
-                                    weeks. It’s a
-                                    little premature to say, but QuicksiteGuru might have saved our business."</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div>
-                            <img src="./Assets/Pictures/Ryyan-1.png" alt="">
-                        </div>
-                        <div class="bg-neutral-900 rounded-9xl ml-[2vw] p-[2rem]">
-                            <h2 class="text-6xl font-light grey-3">Ryyan</h2>
-                            <h2 class="text-2xl mt-[2vh] italic font-regular green-4">Design Lead / Mentor</h2>
-                            <div>
-                                <p class="text-xl w-100% italic mt-[2vh] grey-2 font-light">"Amazed at how talented the people around me. Keeps me motivated with their inclusivity."</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div>
-                            <img src="./Assets/Pictures/David-1.png" alt="">
-                        </div>
-                        <div class="bg-neutral-900 rounded-9xl ml-[2vw] p-[2rem]">
-                            <h2 class="text-6xl font-light grey-3">David</h2>
-                            <h2 class="text-2xl mt-[2vh] italic font-regular green-4">Ui/UX Lead</h2>
-                            <div>
-                                <p class="text-xl w-100% italic mt-[2vh] grey-2 font-light">“Being able to share the ideas of each of our team to create something unique that can help others is fascinating and unique.”</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="carousel-controls">
-                    <button class="carousel-control" id="prev">&lt;</button>
-                    <button class="carousel-control" id="next">&gt;</button>
-                </div>
+            <div class="card" data-img="./Assets/Pictures/InfoCardImg2.png">
+              <h2 class="text-3xl font-regular green-3 sm: text-[2vh]">
+                Streamlined Meta Content
+              </h2>
+              <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh] sm: text-[2vh]">
+                Quick and Simple Access
+              </h3>
+              <p class="text-base  sm: text-[2vh] hide">
+                Effortlessly customize your personal website with our intuitive
+                HTML head section/tag, designed for simple editing and ensuring
+                your site reflects your unique style and needs.
+              </p>
             </div>
+            <div class="card" data-img="./Assets/Pictures/InfoCardImg3.png">
+              <h2 class="text-3xl font-regular green-3 sm: text-[2vh]" >
+                Streamlined Meta Content
+              </h2>
+              <h3 class="text-xl green-1 font-semibold mt-[2vh] mb-[2vh] sm: text-[2vh]">
+                Quick and Simple Access
+              </h3>
+              <p class="text-base  sm: text-[2vh] hide">
+                Effortlessly customize your personal website with our intuitive
+                HTML head section/tag, designed for simple editing and ensuring
+                your site reflects your unique style and needs.
+              </p>
+            </div>
+          </div>
+          <!-- Image Section -->
+          <div class="ml-10 sm: ml-0 image-container-cards">
+            <img
+            
+              id="display-image"
+              src="./Assets/Pictures/InfoCardImg1.png"
+              alt="Selected Image"
+              class="w-[50vw] h-auto rounded-2xl sm: w-100%"
+            />
+          </div>
         </div>
+      </div>
 
-        <footer>
-            <p class="text-3xl text-center font-light bg-neutral-900 font-light text-white h-[10vh]">© 2022 QuicksiteGuru. All rights reserved.</p>
-        </footer>
     </main>
+          <!-- OUR TEAM -->
+          <div class="flex items-center justify-center h-[10vh] bg-black"></div>
+          <div class="flex items-center justify-center h-[10vh] bg-black"></div>
+          <div class="flex items-center h-screen bg-black flex-col">
+            <h1 class="grey-2 font-light text-8xl text-center max-w-[60vw]" id="our_team_title">
+              Our Team
+            </h1>
+            <p
+              class="grey-2 font-extralight text-3xl max-w-[40vw] mt-[5vh] text-center"
+              id="our_team_text"
+            >
+              Passionate, skilled and dedicated to delivering exceptional solutions.
+            </p>
+    
+            <!-- CAROUSEL -->
+            <div class="carousel  mb-[-30vh]  max-h-fit" id="carousel_container">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <div>
+                    <img src="./Assets/Pictures/Serge-1.png" alt="" />
+                  </div>
+                  <div class="bg-neutral-900 rounded-9xl ml-[2vw]  p-[2rem] " id="team_text_container">
+                    <h2 class="text-6xl font-light grey-3" id="carousel-title">Serge</h2>
+                    <h2 class="text-2xl mt-[2vh] italic font-regular green-4">
+                      Founder
+                    </h2>
+                    <div>
+                      <p class="text-xl w-100% italic mt-[2vh] grey-2 font-light" id="carousel-text">
+                        "We’ve gone from feeling helpless about our platform to
+                        feeling hopeful about our future in a manner of weeks. It’s
+                        a little premature to say, but QuicksiteGuru might have
+                        saved our business."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div>
+                    <img src="./Assets/Pictures/Ryyan-1.png" alt="" />
+                  </div>
+                  <div class="bg-neutral-900 rounded-9xl ml-[2vw] p-[2rem] id="team_text_container"">
+                    <h2 class="text-6xl font-light grey-3">Ryyan</h2>
+                    <h2 class="text-2xl mt-[2vh] italic font-regular green-4">
+                      Design Lead / Mentor
+                    </h2>
+                    <div>
+                      <p class="text-xl w-100% italic mt-[2vh] grey-2 font-light">
+                        "Amazed at how talented the people around me. Keeps me
+                        motivated with their inclusivity."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div>
+                    <img src="./Assets/Pictures/David-1.png" alt="" />
+                  </div>
+                  <div class="bg-neutral-900 rounded-9xl ml-[2vw] p-[2rem]" id="team_text_container">
+                    <h2 class="text-6xl font-light grey-3">David</h2>
+                    <h2 class="text-2xl mt-[2vh] italic font-regular green-4">
+                      Ui/UX Lead    
+                    </h2>
+                    <div>
+                      <p class="text-xl w-100% italic mt-[2vh] grey-2 font-light">
+                        “Being able to share the ideas of each of our team to create
+                        something unique that can help others is fascinating and
+                        unique.”
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-control" id="prev">&lt;</button>
+                <button class="carousel-control" id="next">&gt;</button>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div class="flex items-center justify-center h-[10vh] bg-black"></div>
+          <div class="flex items-center justify-center h-[10vh] bg-black"></div>
+          
+          <footer>
+            <p
+              class="text-3xl text-center font-light bg-black font-light text-white h-[10vh] footer"
+              id="footer"
+            >
+              © 2022 QuicksiteGuru. All rights reserved.
+            </p>
+          </footer>
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
