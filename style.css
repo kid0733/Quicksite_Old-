@@ -43,6 +43,11 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+.wrapper{
+  display: inline-flex;
+}
+
+
 .green-1 {
   color: #426648;
 }
@@ -353,10 +358,60 @@ img {
   animation-range: entry 0% cover 40%;
 }
 
+.dynamic-text{
+  margin-left: 5vh;
+}
 
+.dynamic-text li span::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid;
+  animation: typing 2s linear infinite;
+  animation-delay: 0.5s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
 
+.rotate {
+  display: inline-block;
+}
 
+.text-container {
+  display: inline-flex;
+  flex-direction: column;
+  height: 2.5rem;
+  overflow: hidden;
+}
 
+.text-container span {
+  height: 5vh;
+  color: #84cc8f;
+  animation: moveUp 8s linear infinite;
+  text-align: left;
+}
+
+@keyframes moveUp {
+  0%, 5% {
+      transform: translateY(0);
+  }
+  15%, 25% {
+      transform: translateY(-3.25vh);
+  }
+  35%, 45% {
+      transform: translateY(-6.5vh);
+  }
+  55%, 65% {
+      transform: translateY(-10vh);
+  }
+  75%, 95% {
+      transform: translateY(-13.5vh);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
 
     @keyframes typing {
       from { width: 0; }
