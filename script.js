@@ -1,4 +1,13 @@
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
+
+
+    
     // Details Card 1 Carousel
     const cards1 = document.querySelectorAll('.card'); // Cards for Details Card 1
     const displayImage1 = document.getElementById('display-image'); // Display image for Details Card 1

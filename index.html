@@ -41,7 +41,11 @@
       </div>
       <div class="button sm: mr-0">
         <button class="gradient-button px-4 py-2 rounded-lg">
-          Start For Free
+          <a href="https://app.quicksite.guru/">Start For Free</a>
+          
+          
+          
+          
         </button>
       </div>
     </nav>
@@ -54,32 +58,35 @@
           class="text-left flex items-start justify-center flex-col gap-9 sm: items-center"
           id="hero_container"
         >
-          <div>
+          <div class="fade-up">
             <!-- HeroText -->
             <h1
-              class="text-7xl font-bold green-1 mt-10 sm: text-center text-[5vh]"
+              class="text-7xl font-bold green-1 mt-10 sm: text-center "
+              
             >
               BUILD AND HOST
             </h1>
-            <h1 class="text-7xl font-bold green-2 sm: text-center text-[8vh]">
+            <h1 class="text-7xl font-bold green-2 sm: text-center text-[8vh]" >
               FOR FREE
             </h1>
           </div>
           <!-- HeroParagraph -->
-          <p
+          <div class="opacity">
+            <p
             class="text-2xl max-w-[35vw] green-3 text-center"
             id="hero_paragraph"
           >
             QuickSite is a free web development platform that lets you build and
             host your websites for free.
           </p>
+          </div>
           <!-- HeroButton -->
           <div class="button">
             <button
               class="gradient-button px-8 py-6 text-2xl rounded-lg"
               id="hero_button"
             >
-              Start For Free
+            <a href="https://app.quicksite.guru/">Start For Free</a>
             </button>
           </div>
         </div>
@@ -94,36 +101,47 @@
       </div>
 
       <!-- MID-TEXT-1-A -->
-      <div class="flex items-center justify-center flex-col mt-[10vh] img-bg">
-        <h1 class="text-3xl font-bold grey-1 text-center">
+      <div class=" flex items-center justify-center flex-col mt-[10vh] img-bg">
+        <h1 class=" appear text-3xl font-bold grey-1 text-center">
           Launch Your First Website
         </h1>
 
-        <h1 class=" font-bold grey-1 text-center minutes-text">In Minutes</h1>
+        <h1 class="appear font-bold grey-1 text-center minutes-text">In Minutes</h1>
       </div>
 
       <!-- MID-TEXT-1-B -->
-      <div class="flex items-center justify-center flex-col mt-[20vh]">
-        <h1 class="text-7xl font-bold green-2  text-center">
+      <div class="  flex items-center justify-center flex-col mt-[20vh]">
+        <h1 class=" appear text-7xl font-bold green-2  text-center">
           Craft Your Vision
         </h1>
 
         <h1
-          class="text-7xl font-bold green-1 mt-[10vh] text-center"
+          class="appear text-7xl font-bold green-1 mt-[10vh] text-center"
           id="mid_text_B"
         >
           AI simplicity <br>+<br> Customization Power
         </h1>
 
-        <p class="text-2xl mt-[5vh] mb-[10vh] max-w-[60vw] text-center sm: max-w-[80vw] bg-neutral-100 p-10 rounded-2xl green-3">
-          Easily create stunning websites, integrate data, and implement
-          advanced features.
-        </p>
+        <div class="bg-neutral-100 max-h-[30vh] mt-[10vh] rounded-3xl">
+          <div class="container">
+            <div class="row">
+              <div class="slider-frame col-sm-3 offset-sm-3">
+                <ul class="slides">
+                  <li class="slide">Item 1</li>
+                  <li class="slide">Item 2</li>
+                  <li class="slide">Item 3</li>
+                  <li class="slide">Item 4</li>
+                  <li class="slide">Item 5</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Details Card 1 -->
-      <div class="flex items-center justify-center h-screen">
-        <div class="flex flex-row sm: items-center justify-center" id="cards_container_mobile">
+      <div class=" appear flex items-center justify-center h-screen">
+        <div class="flex flex-row sm: items-center justify-center cards_container_mobile">
           <!-- Cards Section -->
           <div class="flex flex-col space-y-4 overflow-x-scroll" id="cards_mobile">
             <div class="card" data-img="./Assets/Pictures/InfoCardImg1.png">
@@ -167,7 +185,7 @@
             </div>
           </div>
           <!-- Image Section -->
-          <div class=" image-container-cards">
+          <div class="appear image-container-cards">
             <img
             
               id="display-image"
@@ -182,13 +200,13 @@
       <!-- MID-TEXT-2-A -->
       <div class="flex items-center justify-center  flex-col  " id="mid_text_container">
         <h1
-          class="text-5xl font-bold green-2 text-center max-w-[60vw] "
+          class="appear text-5xl font-bold green-2 text-center max-w-[60vw] "
           id="mid_text_1"
         >
           Build Production-Ready Websites Effortlessly
         </h1>
 
-        <h1 class="text-7xl font-bold green-1 mt-[20vh] text-center" id="mid_text_2">
+        <h1 class=" appear text-7xl font-bold green-1 mt-[20vh] text-center" id="mid_text_2">
           Customize Everything
         </h1>
 
@@ -198,10 +216,10 @@
       </div>
 
       <!-- Details Card 2 -->
-      <div class="flex items-center justify-center h-screen">
+      <div class="appear flex items-center justify-center h-screen">
         <div class="flex flex-row sm: items-center justify-center" id="cards_container_mobile">
           <!-- Cards Section -->
-          <div class="flex flex-col space-y-4 overflow-x-scroll" id="cards_mobile">
+          <div class="flex flex-col space-y-4 overflow-hidden" id="cards_mobile">
             <div class="card" data-img="./Assets/Pictures/InfoCardImg1.png">
               <h2 class="text-5xl font-regular green-3 sm: text-[2vh]">
                 Streamlined Meta Content
@@ -243,7 +261,7 @@
             </div>
           </div>
           <!-- Image Section -->
-          <div class="  image-container-cards">
+          <div class="appear  image-container-cards">
             <img
             
               id="display-image"

@@ -74,7 +74,7 @@ img {
   padding: 20px;
   border-radius: 30px;
   cursor: pointer;
-  transition: background-color 0.3s;
+
 }
 
 .card:hover {
@@ -156,15 +156,19 @@ img {
 .hide {
   opacity: 0;
   visibility: hidden;
-  display: none;
-  transition: all 5s ease;
+  max-width: 30vw;
+  max-height: 2vh;
+  transition: all 0.05s ease-in-out, visibility 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .show {
   opacity: 1;
   visibility: visible;
-  transition: all 5s ease;
+  transition: all 0.4s ease-in-out, visibility 0.6s ease-in-out;
+  overflow: hidden;
   max-width: 30vw;
+  max-height: 20vh;
 }
 
 #mid_text_B {
@@ -321,5 +325,80 @@ img {
   }
   .minutes-text {
     font-size: 3rem;
+  }
+}
+
+
+/* Animation */
+
+.fade-up{
+  animation: fade-up 3s cubic-bezier(.17,.67,0,.98);
+}
+.opacity{
+  opacity: 0;
+  animation: fade-up 6s cubic-bezier(.17,.67,0,.98);
+
+}
+
+.typewriter{
+  border-right: 1px solid;
+
+}
+
+
+
+.appear{
+  animation: appear  linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+
+
+
+
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: black; }
+    }
+
+
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale: 0.5;
+    transform: translateY(-100px);
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade-up{
+  0%{
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+@keyframes opacity{
+  0%{
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
   }
 }
